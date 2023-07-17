@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare",
     "typecheck": "npx nuxi typecheck",
     "lint": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
-    "lintfix": "npm run lint -- --fix",
+    "lintfix": "npm run lint -- --fix && npm run typecheck",
     "prepare": "husky install"
   },
   "lint-staged": {
